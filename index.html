@@ -1,118 +1,431 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
-        
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Tofik </title>
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="/styles.css">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
-        <title>Wili dan lulu | Portfolio</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="profile container">
-            <!-- Theme button -->
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
 
-            <div class="profile__container grid">
-                <div class="profile__data">
-                    <div class="profile__border">
-                        <div class="profile__perfil">
-                            
-                            <img src="assets/img/pic.png" alt="">
-                        </div>
-                    </div>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
 
-                    <h2 class="profile__name">Wili dan lulu</h2>
-                    <h3 class="profile__profession">Profile Kucing</h3>
+<body class="light-theme">
 
-                    <ul class="profile__social">
-                        <!--<a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        --->
-                        <a href="https://github.com/TofikXGawor/store" target="_blank" class="profile__social-link">
-                            <i class="ri-linkedin-box-line"></i>
-                        </a>
-                        <a href="https://github.com/TofikXGawor/store" target="_blank" class="profile__social-link">
-                            <i class="ri-github-line"></i>
-                        </a>
-                    </ul>
+  <!--
+    - #HEADER
+  -->
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="#">
+          <img src="./logo-light.svg" alt="logo" width="150" class="logo-light">
+          <img src="./logo-dark.svg" alt="logo" width="150" class="logo-dark">
+        </a>
+
+        <div class="btn-group">
+
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="#" class="nav-link">luluwilii</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">kontak kami</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">WhatsApp</a>
+            </li>
+
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">lulu wili</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="https://wa.me/6285771828663" class="nav-link">kontak kami</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="https://wa.me/6285771828663" class="nav-link">WhatsApp</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div>
+
+            <p class="h3 nav-title">Informasi</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Kucing</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Hamster</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Developer</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+
+    <!--
+      - #HERO SECTION
+    -->
+
+    <div class="hero">
+
+      <div class="container">
+
+        <div class="left">
+
+          <h1 class="h1">
+            Hello Saya<b>Tofik</b>.
+            <br>Web Developer
+          </h1>
+
+          <p class="h3">
+            Selamat Datang Yang Telah Melihat Halaman Website Ini, ini adalah tampilan Website Sederhana Yang di rancang menggunakan Acode Android<abbr title="Accessibility"></abbr>
+            
+          </p>
+
+          <div class="btn-group">
+            <a href="#" class="btn btn-primary">Kontak kami</a>
+            <a href="#" class="btn btn-secondary">Web</a>
+          </div>
+
+        </div>
+
+        <div class="right">
+
+          <div class="pattern-bg"></div>
+          <div class="img-box">
+            <img src="./assets/images/hero.png" alt="Julia Walker" class="hero-img">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <div class="main">
+
+      <div class="container">
+
+        <!--
+          - BLOG SECTION
+        -->
+
+        <div class="blog">
+
+          <h2 class="h2">Postingan Terbaru</h2>
+
+          <div class="blog-card-group">
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/blog-1.png" alt=""
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Kucing</button>
+
+                <h3>
+                  <a href="#" class="h3">
+                    Tidak Ada Pertanyaan 
+                  </a>
+                </h3>
+
+                <p class="blog-text">
+                  Tidak Ada Pertanyaan 
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Julia Walker" width="50">
+                  </div>
+
+                  
+                    <p class="text-sm">
+                      <time datetime="2022-01-17">Sep 2024</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">1 Tahun Yang Lalu</time>
+                    </p>
+                  </div>
+
                 </div>
-                        </p>
-                    </div>
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number"></h3>
-                        <p class="profile__info-description">Selamat Datang Semoga Anda Senang Ini adalah Website Pertama Kami Yang di Buat Oleh Tofik<br></p>
-                    </div>
-                </div>
 
-                <div class="profile__buttons">
-                    <!-- Insert your CV -->
-                    <a download="" href="assets/pdf/Vaibhavtomar_resume.pdf" class="button">
-                        TikTok <i class="ri-download-line"></i>
-                    </a>
+              </div>
 
-                    <div class="profile__buttons-small">
-                        <!-- Insert a real number plus country code -->
-                        
-                           
-                        
-                    </div>
-                </div>
             </div>
-        </header>
-
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <section class="filters container">
-                <!--=============== FILTERS TABS ===============-->
-                <ul class="filters__content">
-                    <button class="filters__button filter-tab-active" data-target="#projects">
-                        LULU
-                    </button>
-                    <button class="filters__button" data-target="#skills">
-                        WILI
-                    </button>
-                </ul>
-
-                <div class="filters__sections">
-                    <!--=============== PROJECTS ===============-->
-                    <div class="projects__content grid filters__active" data-content id="projects">
-                        <article class="projects__card">
-                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                           
-
-                            
-                            </div>
-                        </article>
 
 
-                            </div>
-                        </div>
-                    </div>
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/blog-2.png" alt="Fast web page loading on a $20 feature phone" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Tidak Ada Pertanyaan </button>
+
+                <h3><a href="" class="h3">Tidak Ada Pertanyaan </a></h3>
+
+                <p class="blog-text">
+                  Tidak Ada Pertanyaan 
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Tofik</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-12-10">Sep 2024</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT2M">2 menit yang lalu</time>
+                    </p>
+                  </div>
+
                 </div>
-            </section>
-        </main>
 
-        <!--=============== FOOTER ===============-->
-        <footer class="footer container">
-            <span class="footer__copy">
-                &#169; Wili dan lulu. All rigths reserved
-            </span>
-        </footer>
+              </div>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+            </div>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="./assets/images/blog-3.png" alt="Accessibility Tips for Web Developers" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Tidak Ada Pertanyaan </button>
+
+                <h3><a href="" class="h3">Tidak Ada Pertanyaan </a></h3>
+
+                <p class="blog-text">
+                  Tidak Ada Pertanyaan 
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Tidak Ada Pertanyaan </a>
+
+                    
+
+            </div>
+
+          </div>
+
+          <div class="contact">
+
+            
+
+            <div class="wrapper">
+
+              <p>
+                Jika Anda Ingin Donasi min 5.000 Untuk Tofik Bisa Hubungi https://wa.me/6285771828663
+              </p>
+<h2 class="h2">Terimakasih</h2>
+              <ul class="social-link">
+
+                <li>
+                  <a href="#" class="icon-box discord">
+                    <ion-icon name="logo-discord"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="icon-box twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="icon-box facebook">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="wrapper">
+
+        <a href="#" class="footer-logo">
+          <img src="./assets/images/logo-light.svg" alt="SimpleBlog Logo" width="150" class="logo-light">
+          <img src="./assets/images/logo-dark.svg" alt="SimpleBlog Logo" width="150" class="logo-dark">
+        </a>
+
+        <p class="footer-text">
+          ok ok :)
+        </p>
+
+      </div>
+
+      <div class="wrapper">
+
+
+
+      <div class="wrapper">
+
+
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <p class="copyright">
+      &copy; Copyright 2024 <a href="#">tofikdev.com</a>
+    </p>
+
+  </footer>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
